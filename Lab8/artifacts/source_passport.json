@@ -1,0 +1,20 @@
+{
+  "dataset_name": "Airfoil Self-Noise",
+  "uci_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+  "authors_or_org": "Thomas F. Brooks, D. Stuart Pope, Michael A. Marcolini (NASA)",
+  "license": "CC BY 4.0",
+  "download_date": "2026-11-20",
+  "file_name": "airfoil_self_noise.dat",
+  "initial_row_count_expected": 1503,
+  "row_meaning": "Окремий тест у аеродинамічній трубі для профілю NACA 0012 при заданій швидкості, куті атаки та частоті",
+  "target_column": "scaled-sound-pressure",
+  "target_units": "dB (decibels)",
+  "seed": 42,
+  "package_versions": {
+    "python_tf": "2.22.0-rc0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}
