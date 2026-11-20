@@ -1,0 +1,49 @@
+{
+  "tensorflow": "2.22.0-rc0",
+  "keras": "3.16.0.dev2026110803",
+  "seed": 42,
+  "data_dir": "../Lab9/data/food101_lab9",
+  "class_names": [
+    "carrot_cake",
+    "fried_rice",
+    "peking_duck"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "pixel_range": [
+    0,
+    255
+  ],
+  "backbone": "EfficientNetB0",
+  "weights": "imagenet",
+  "selected_stage": "fine_tuning",
+  "test_macro_f1": 0.9786569479172075,
+  "comparison": [
+    {
+      "stage": "feature_extraction",
+      "unfrozen_blocks": "none (head only)",
+      "lr": 0.001,
+      "trainable_params": 3843,
+      "epochs_ran": 10,
+      "best_epoch": 10,
+      "accuracy": 0.9555555582046509,
+      "loss": 0.12003906071186066
+    },
+    {
+      "stage": "fine_tuning",
+      "unfrozen_blocks": "block7*, top_* (BN frozen)",
+      "lr": 1e-05,
+      "trainable_params": 1125427,
+      "epochs_ran": 7,
+      "best_epoch": 4,
+      "accuracy": 0.95333331823349,
+      "loss": 0.11744450032711029
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.9786666631698608,
+    "loss": 0.062470585107803345
+  }
+}
